@@ -57,6 +57,8 @@ address {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -82,18 +84,64 @@ ul {
 .section-title {
 }
 
+/* Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 16px;
+}
+
 .link-list {
-  display: inline;
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 .link {
   color: var(--color-svit-pink);
   text-decoration: none;
-  display: inline;
 }
 
 .link:hover {
   color: var(--color-svit-violet);
+}
+
+/* for inputs */
+.log-in-button:focus {
+  color: pink;
+  background-color: transparent;
+}
+
+.button[disabled] {
+  color: gray;
+}
+
+.sign-up-button {
+  color: burlywood;
+  margin-right: 8px;
+}
+
+.log-in-button {
+  color: white;
+  background-color: coral;
+  border: 2px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.log-in-button:hover {
+  color: blue;
+  background-color: transparent;
 }
 
 /* Hero section */
@@ -117,36 +165,39 @@ ul {
   color: var(--color-svit-pink);
 }
 
-.log-in-button {
-  color: white;
-  background-color: coral;
-  border: 2px solid blue;
-  border-radius: 4px;
-  cursor: pointer;
+/* Highlights section */
+.highlights-section {
+  background-color: var(--color-svit-violet);
+  padding: 16px;
 }
 
-.log-in-button:hover {
-  color: blue;
-  background-color: transparent;
+.highlights-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 
-/* for inputs */
-.log-in-button:focus {
-  color: pink;
-  background-color: transparent;
-}
-
-.sign-up-button {
-  color: burlywood;
-}
-
-.button[disabled] {
-  color: gray;
+.highlights-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
 }
 
 /* Artist statement section */
 .artist-statement-section {
   padding-top: 96px;
+  gap: 100px;
+}
+
+.artist-statement-container {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-statement-content {
+  max-width: 710px;
 }
 
 .artist-statement-title {
@@ -159,18 +210,33 @@ ul {
 }
 
 /* Articles section */
-.articles-section {
-  margin-bottom: 80px;
-}
-
 .articles-title {
   margin-bottom: 16px;
 }
 
-.articles-item {
+.topics-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+
+.topics-item {
+  flex-basis: calc((100% - 40px) / 5);
+}
+
+.topic-card {
   background-color: lightpink;
   color: var(--color-svit-pink);
+  border: 1px solid var(--color-primary-light);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic-title {
+  align-self: center;
   text-transform: uppercase;
+  flex-basis: 100px;
 }
 
 /* Footer */
