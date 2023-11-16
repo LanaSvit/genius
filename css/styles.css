@@ -31,12 +31,24 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h1,
+h3,
+p {
+  margin-top: 0;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1, 5;
+  line-height: 1.5;
+  margin: 0;
 }
 
 address {
@@ -45,6 +57,48 @@ address {
 
 ul {
   list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.section-title {
+}
+
+.link-list {
+  display: inline;
+}
+
+.link {
+  color: var(--color-svit-pink);
+  text-decoration: none;
+  display: inline;
+}
+
+.link:hover {
+  color: var(--color-svit-violet);
+}
+
+/* Hero section */
+.hero-section {
+  padding: 172px 0;
 }
 
 .hero-title {
@@ -56,6 +110,7 @@ ul {
   text-shadow: 2px 2px 4px violet;
   letter-spacing: 4px;
   word-spacing: 10px;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
@@ -89,17 +144,30 @@ ul {
   color: gray;
 }
 
-.link {
-  color: var(--color-svit-pink);
-  text-decoration: none;
+/* Artist statement section */
+.artist-statement-section {
+  padding-top: 96px;
 }
 
-.link:hover {
-  color: var(--color-svit-violet);
+.artist-statement-title {
+  margin-bottom: 42;
 }
 
-/* Topics section */
-.topics {
+/* News section */
+.news-title {
+  margin-bottom: 80px;
+}
+
+/* Articles section */
+.articles-section {
+  margin-bottom: 80px;
+}
+
+.articles-title {
+  margin-bottom: 16px;
+}
+
+.articles-item {
   background-color: lightpink;
   color: var(--color-svit-pink);
   text-transform: uppercase;
