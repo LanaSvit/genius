@@ -1,120 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Svit world</title>
-</head>
-<body>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a href="#">
-                <img src="./images/logo-backery.svg" alt="Logo of Backery">
-            </a>
-            <ul>
-                <li><a href="#"></a>Artist statement</li>
-                <li><a href="#"></a>Articles</li>
-                <li><a href="#"></a>Contacts</li>
-            </ul>
-        </nav>
-        <button type="button">Log in</button>
-        <button type="button">Sign up</button>
+      <nav>
+        <a href="./index.html">
+          <img src="./images/logo-backery.svg" alt="Logo of Backery" />
+        </a>
+        <ul>
+          <li>
+            <a class="link" href="#artist-statement-section"
+              >Artist statement</a
+            >
+          </li>
+          <li><a class="link" href="#articles-section">Articles</a></li>
+          <li><a class="link" href="#contacts-section">Contacts</a></li>
+        </ul>
+      </nav>
+      <button class="log-in-button" type="button">Log in</button>
+      <button class="sign-up-button" disabled type="button">Sign up</button>
     </header>
     <main>
-        <section>
-            <h1>Svit world</h1>
-            <p>Mission</p>
-            <p>Vision</p>
-            <img src="./images/finally-free.jpg" alt="finally free cutout">
-        </section>
-        <section>
-            <h2>News</h2>
-            <p>Add <span>new info</span></p>
-        </section>
-        <section>
-            <h2>Topics</h2>
-            <ul>
-                <li>
-                <article>
-                    <h3>Ikebana</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Ikebana</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>            
-            <li>
-                <article>
-                    <h3>Tea</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Pottery</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Dev</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Movie</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
-            <li>
-                <article>
-                    <h3>Poetry</h3>
-                    <p>Info1</p>
-                    <p>Info2</p>
-                </article>
-            </li>
+      <section>
+        <h1 class="hero-title"><span class="accent">Svit</span> world</h1>
+        <p id="artist-statement-section">Artist statement</p>
+        <p>Vision</p>
+        <img
+          src="./images/finally-free.jpg"
+          height="300px"
+          width="200px"
+          alt="finally free cutout"
+        />
+      </section>
+      <section>
+        <h2>News</h2>
+        <p>Add <span>new info</span></p>
+      </section>
+      <section id="articles-section">
+        <h2>Articles</h2>
+        <ul class="topics">
+          <li>
+            <article>
+              <h3>Ikebana</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Ikebana</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Tea</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Pottery</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Dev</h3>
+              <p lang="uk">Інфо</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Movie</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Poetry</h3>
+              <p>Info1</p>
+              <p>Info2</p>
+            </article>
+          </li>
         </ul>
-        </section>
-        <section>
-            <h2>Topics2</h2>
-            <article></article>
-            <article></article>
-            <article></article>
-        </section>
-        <section></section>
+      </section>
+      <section>
+        <h2>Topics2</h2>
+        <article></article>
+        <article></article>
+        <article></article>
+      </section>
+      <section></section>
     </main>
     <footer>
-        <a href="#">
-            <img src="./images/logo-backery.svg" alt="Logo of Backery">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#"></a>Artist statement</li>
-                <li><a href="#"></a>Articles</li>
-                <li><a href="#"></a>Contacts</li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a href="tel:+380688989988">+380688989988</a></li>
-                <li><a href="mailto:antonio@gmail.com">antonio@gmail.com</a></li>
-                <li><a href="https://maps.app.goo.gl/Ve8uwtygY7EkkXsc8" target="_blank">Київ, Січових Стрільців, 99</a></li>
-                <li><a href="#">Inst icon</a></li>
-                <li><a href="#">fb icon</a></li>
-            </ul>
-            <a href="#" target="_blank">Privacy</a>
-            <p>Copyright © 2023</p>
-        </address>
+      <a href="#">
+        <img src="./images/logo-backery.svg" alt="Logo of Backery" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a class="link" href="#artist-statement-section"
+              >Artist statement</a
+            >
+          </li>
+          <li><a class="link" href="#articles-section">Articles</a></li>
+          <li><a class="link" href="#contacts-section">Contacts</a></li>
+        </ul>
+      </nav>
+      <address id="contacts-section">
+        <ul>
+          <li>
+            <a class="address-link" href="tel:+380688989988">+380688989988</a>
+          </li>
+          <li>
+            <a class="address-link" href="mailto:antonio@gmail.com"
+              >antonio@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="address-link"
+              href="https://maps.app.goo.gl/Ve8uwtygY7EkkXsc8"
+              target="_blank"
+              >Київ, Січових Стрільців, 99</a
+            >
+          </li>
+          <li><a href="#">Inst icon</a></li>
+          <li><a href="#">fb icon</a></li>
+        </ul>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.650902326463!2d30.418095588684096!3d50.467519913431616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdb5100dc6bf%3A0x4816fc68494bc724!2sSyretskyi%20Park!5e0!3m2!1sen!2sua!4v1699454377351!5m2!1sen!2sua"
+          width="300"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <a href="#" target="_blank">Privacy</a>
+        <p>Copyright &copy; 2023</p>
+      </address>
     </footer>
-</body>
+  </body>
 </html>
