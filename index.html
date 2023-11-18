@@ -28,7 +28,7 @@
               </li>
               <li><a class="link" href="#news-section">News</a></li>
               <li><a class="link" href="#articles-section">Articles</a></li>
-              <li><a class="link" href="#contacts-section">Contacts</a></li>
+              <li><a class="link" href="#address-section">Contacts</a></li>
             </ul>
           </nav>
           <button class="log-in-button" type="button">Log in</button>
@@ -138,34 +138,48 @@
           </ul>
         </div>
       </section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.650902326463!2d30.418095588684096!3d50.467519913431616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdb5100dc6bf%3A0x4816fc68494bc724!2sSyretskyi%20Park!5e0!3m2!1sen!2sua!4v1699454377351!5m2!1sen!2sua"
-        width="300"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <section class="contact-section section" id="contact-section">
+        <div class="container">
+          <div class="contact-container">
+            <div class="contact-content">
+              <h2 class="contact-title section-title">Contact me</h2>
+              <p>Fill the form for</p>
+              <!-- form -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.650902326463!2d30.418095588684096!3d50.467519913431616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdb5100dc6bf%3A0x4816fc68494bc724!2sSyretskyi%20Park!5e0!3m2!1sen!2sua!4v1699454377351!5m2!1sen!2sua"
+              width="300"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-container container">
-        <a href="#">
-          <img src="./images/logo-backery.svg" alt="Logo of Backery" />
-        </a>
-        <nav>
-          <ul>
+        <nav class="footer-nav">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="./images/logo-backery.svg" alt="Logo of Backery" />
+            </a>
+          </div>
+          <ul class="footer-menu">
             <li>
               <a class="link" href="#artist-statement-section"
                 >Artist statement</a
               >
             </li>
             <li><a class="link" href="#articles-section">Articles</a></li>
-            <li><a class="link" href="#contacts-section">Contacts</a></li>
+            <li><a class="link" href="#address-section">Contacts</a></li>
           </ul>
         </nav>
-        <address id="contacts-section">
-          <ul>
+        <address class="footer-address" id="address-section">
+          <ul class="address-list">
             <li>
               <a class="address-link" href="tel:+380688989988">+380688989988</a>
             </li>
@@ -184,19 +198,21 @@
             </li>
             <li>
               <a href="#">
-                <svg class="adress-icon" width="32" height="32">
+                <svg class="address-icon" width="32" height="32">
                   <use href="./images/icons.svg#icon-instagram-logo"></use>
                 </svg>
               </a>
               <a href="#">
-                <svg class="adress-icon" width="32" height="32">
+                <svg class="address-icon" width="32" height="32">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
           </ul>
-          <a href="#" target="_blank">Privacy</a>
-          <p>Copyright &copy; 2023</p>
+          <div class="address-info">
+            <a href="#" target="_blank">Privacy policy</a>
+            <p>Copyright &copy; 2023</p>
+          </div>
         </address>
       </div>
     </footer>
