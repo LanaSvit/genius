@@ -224,6 +224,56 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Contact me</h2>
+        <p>Your feedback is welcomed</p>
+        <form name="contact-form" autocomplete="off">
+          <div class="form-field">
+            <label class="form-label" for="user-name">Type your name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-tel"
+              >Type your phone number</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Phone"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-email">Type your email</label>
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="user-comment"
+              >Type your comment</label
+            >
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <button class="form-button button" type="submit">Send</button>
+          <p class="form-terms">
+            I agree to your <a href="#">Privacy policy</a>
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
