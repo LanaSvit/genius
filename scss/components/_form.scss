@@ -1,0 +1,87 @@
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  border: solid var(--color-secondary-light);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-svit-dark-blue);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.form-label {
+  display: block;
+}
+
+.user-comment {
+  padding: 16px 42px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: solid var(--color-secondary-light);
+  border-radius: 8px;
+}
+
+.user-comment::placeholder {
+  color: var(--color-secondary-light);
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.form-terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.form-terms:link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-active-green);
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 2px;
+  margin-top: 5px;
+}
+
+.form-button {
+  display: block;
+  margin: 16px auto;
+}

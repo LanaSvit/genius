@@ -1,0 +1,16 @@
+.highlights-section {
+  background-color: var(--color-svit-violet);
+  padding: 16px;
+}
+
+.highlights-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.highlights-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}

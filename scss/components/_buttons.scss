@@ -1,0 +1,46 @@
+.button {
+  color: var(--color-svit-violet);
+  background-color: var(--color-svit-light-pink);
+  padding: 16px 32px;
+  font-weight: 600;
+  border: 2px solid var(--color-svit-dark-blue);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-svit-dark-blue);
+  background-color: transparent;
+  border-color: currentColor;
+}
+
+.button[disabled] {
+  color: var(--color-primary-dark);
+  background-color: var(--color-secondary-light);
+  border-color: currentColor;
+}
+
+/* for inputs */
+.log-in-button:focus {
+  color: pink;
+  background-color: transparent;
+}
+
+.sign-up-button {
+  color: burlywood;
+  margin-right: 8px;
+}
+
+.log-in-button {
+  color: white;
+  background-color: coral;
+  border: 2px solid blue;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.log-in-button:hover {
+  color: blue;
+  background-color: transparent;
+}

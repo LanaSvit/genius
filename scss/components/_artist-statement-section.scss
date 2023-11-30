@@ -1,0 +1,51 @@
+.artist-statement-section {
+  padding-top: 96px;
+  gap: 100px;
+}
+
+.artist-statement-container {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artist-statement-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+}
+
+.artist-statement-title {
+  margin-bottom: 42;
+  position: relative;
+  align-self: center;
+}
+
+.artist-statement-title::before {
+  content: '*';
+  position: absolute;
+  left: -16px;
+}
+
+.artist-statement-title::after {
+  content: '*';
+  position: absolute;
+  right: -16px;
+}
+
+.artist-statement-image {
+  animation: scale 2s linear;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(90%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}

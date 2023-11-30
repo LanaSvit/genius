@@ -1,0 +1,16 @@
+.link-list {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.link {
+  color: var(--color-svit-pink);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--color-svit-violet);
+}
