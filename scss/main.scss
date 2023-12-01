@@ -1,23 +1,23 @@
 @import './utils/fonts';
 @import './utils/variables';
 
-@import './base';
+@import './utils/base';
 @import './utils/utils';
 
 @import './components/buttons';
 @import './components/links';
+@import './components/texts';
+@import './layouts/header';
 
-@import './components/header';
+@import './layouts/hero-section';
+@import './layouts/highlights-section';
+@import './layouts/artist-statement-section';
+@import './layouts/news-section';
+@import './layouts/articles-section';
+@import './layouts/contact-section';
 
-@import './components/hero-section';
-@import './components/highlights-section';
-@import './components/artist-statement-section';
-@import './components/news-section';
-@import './components/articles-section';
-@import './components/contact-section';
+@import './layouts/footer';
 
-@import './components/footer';
+@import './layouts/modal';
 
-@import './components/modal';
-
-@import './components/form';
+@import './layouts/form';

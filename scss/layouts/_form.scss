@@ -25,13 +25,9 @@
   display: block;
 }
 
-.user-comment {
-  padding: 16px 42px;
-  width: 100%;
+.user-comment-input {
   height: 120px;
   resize: none;
-  border: solid var(--color-secondary-light);
-  border-radius: 8px;
 }
 
 .user-comment::placeholder {
@@ -61,6 +57,7 @@
 .checkbox-input {
   appearance: none;
 }
+
 .checkbox-input:checked + .checkbox-label::before {
   background-color: var(--color-active-green);
 }
@@ -84,4 +81,5 @@
 .form-button {
   display: block;
   margin: 16px auto;
+  font-size: 20px;
 }

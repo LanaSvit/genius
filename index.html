@@ -31,15 +31,18 @@
               <li><a class="link" href="#address-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="log-in-button" type="button">Log in</button>
-          <button class="sign-up-button" disabled type="button">Sign up</button>
+          <button class="log-in-button button-small" type="button">
+            Log in
+          </button>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
-          <h1 class="hero-title"><span class="accent">Svit</span> world</h1>
+          <h1 class="hero-section-title">
+            <span class="accent">Svit</span> world
+          </h1>
         </div>
       </section>
       <section class="highlights-section section">
@@ -63,7 +66,7 @@
             <h2 class="artist-statement-title section-title">
               Artist statement
             </h2>
-            <p class="artist-statement-text">
+            <p class="section-text">
               My art is a way to discover my self, to express the inner
               emptiness <br />
               and to share my vision of beauty with the world. <br />
@@ -87,7 +90,7 @@
       <section class="news-section section" id="news-section">
         <div class="container">
           <h2 class="news-title section-title">News</h2>
-          <p>Add <span>new info</span></p>
+          <p class="section-text">Add <span>new info</span></p>
         </div>
       </section>
       <section class="articles-section section" id="articles-section">
@@ -151,9 +154,12 @@
           <div class="contact-container">
             <div class="contact-content">
               <h2 class="contact-title section-title">Contact me</h2>
-              <p>Fill the form for</p>
+              <p class="section-text">Fill the form for</p>
               <!-- form -->
-              <button class="button modal-btn-open" type="button">
+              <button
+                class="button button-contact modal-btn-open"
+                type="button"
+              >
                 Send form
               </button>
             </div>
@@ -231,8 +237,8 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
-        <h2>Contact me</h2>
-        <p>Your feedback is welcomed</p>
+        <h2 class="section-title">Contact me</h2>
+        <p class="section-text">Your feedback is welcomed</p>
         <form name="contact-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
@@ -276,13 +282,13 @@
             />
           </div>
           <div class="form-field">
-            <label class="form-label visually-hidden" for="user-comment"
+            <label class="form-label visually-hidden" for="user-comment-input"
               >Type your comment</label
             >
             <textarea
-              class="user-comment"
-              name="user-comment"
-              id="user-comment"
+              class="form-input user-comment-input"
+              name="user-comment-input"
+              id="user-comment-input"
               required
               placeholder="Type your comment"
               minlength="5"
