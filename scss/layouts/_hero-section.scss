@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 172px 0;
+  padding: 76px 0;
   background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -10,20 +10,40 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.hero-section-title {
-  color: var(--color-svit-violet);
-  font-weight: 900;
-  font-size: 70px;
-  font-style: italic;
-  text-align: center;
-  text-shadow: 2px 2px 4px violet;
-  letter-spacing: 4px;
-  word-spacing: 10px;
-  margin-bottom: 0;
-}
+  @media screen and (min-width: $bp-tablet) {
+    padding: 172px 0;
+  }
 
-.hero-section-title .accent {
-  color: var(--color-svit-pink);
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(../images/peonies@2x.jpg);
+  }
+
+  .hero-section-title {
+    color: var(--color-svit-violet);
+    font-weight: 900;
+    font-size: 70px;
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 4px violet;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    margin-bottom: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+    }
+  }
+
+  .hero-section-title .accent {
+    color: var(--color-svit-pink);
+  }
 }

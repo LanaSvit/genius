@@ -3,8 +3,13 @@
   --color-svit-light-pink: rgb(249, 176, 187);
   --color-svit-violet: darkviolet;
   --color-svit-dark-blue: darkslateblue;
-  --color-primary-dark: rgb(73, 73, 73);
-  --color-primary-light: white;
-  --color-secondary-light: rgb(150, 150, 150);
+  --color-primary-gray: rgb(73, 73, 73);
+  --color-white: white;
+  --color-antique-white: antiquewhite;
+  --color-secondary-gray: rgb(150, 150, 150);
   --color-active-green: rgb(0, 100, 0);
 }
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

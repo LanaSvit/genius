@@ -13,7 +13,7 @@
 }
 
 .topic-card {
-  border: 1px solid var(--color-primary-light);
+  border: 1px solid var(--color-white);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
     rgba(248, 226, 245, 0.597),
     rgba(247, 102, 223, 0.5)
   );
+  padding: 24px;
 }
 
 .topic-card:hover {

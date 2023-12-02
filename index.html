@@ -15,12 +15,12 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-container">
-          <nav class="header-nav">
+        <div class="header__container">
+          <nav class="header__nav">
             <a href="./index.html">
               <img src="./images/logo-backery.svg" alt="Logo of Backery" />
             </a>
-            <ul class="link-list">
+            <ul class="header__menu">
               <li>
                 <a class="link" href="#artist-statement-section"
                   >Artist statement</a
@@ -31,9 +31,22 @@
               <li><a class="link" href="#address-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="log-in-button button-small" type="button">
+          <button
+            class="header__button log-in-button button-small"
+            type="button"
+          >
             Log in
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -110,7 +123,7 @@
             </li>
             <li class="topics-item">
               <article class="topic-card">
-                <img class="topic-img" src="./images/ikebana.jpg" alt="Tea" />
+                <img class="topic-img" src="./images/tea.jpg" alt="Tea" />
                 <h3 class="topic-title">Tea</h3>
                 <p class="topic-description">Info1</p>
               </article>
@@ -312,5 +325,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -17,12 +17,16 @@ a {
 }
 
 body {
-  color: var(--color-primary-dark);
+  color: var(--color-primary-gray);
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 18px;
+  }
 }
 
 address {
@@ -43,5 +47,9 @@ ul {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 12px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0;
+  }
 }
